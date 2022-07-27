@@ -61,7 +61,8 @@ class _HomePageState extends State<HomePage> {
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(
+                    top: 00, bottom: 20, left: 20, right: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -134,6 +135,13 @@ class _HomePageState extends State<HomePage> {
                         feedTime: '1 hrs ago',
                         feedText:
                             'Stranger Things: The Experience is an immersive experience in New York based on the iconic Netflix show.Be the hero of your own Stranger Things story and unlock your power as you journey through Hawkins Lab alongside your favorite characters. Then enjoy an 80s-style medley of locations and fan-favorite moments with merchandise, food & drinks, photo ops, interactive performers, and more surprises!'),
+                    makeFeed(
+                        userName: 'Jim Hopper',
+                        userImage: 'assets/images/p8.jpg',
+                        feedImage: 'assets/images/post3.jpg',
+                        feedTime: '1 hrs ago',
+                        feedText:
+                            'Movies move us like nothing else can, whether theyre scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.'),
                   ],
                 ),
               ),
